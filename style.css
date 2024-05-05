@@ -1,0 +1,461 @@
+/****** General ***********/
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+:root {
+    --main-color: #0065FC;
+    --main-bg-color: #F2F2F2;
+    --filter-bg-color: #DEEBFF;
+}
+
+.fa-solid {
+    color: var(--main-color);
+}
+.search-icon {
+  padding: 0; /* Supprime le rembourrage pour l'icône */
+}
+
+.search-input {
+  flex: 1;
+  border-left: none; /* Supprime la bordure de gauche pour le champ de recherche */
+  margin-right: -100px;
+}
+
+.search-button {
+    background-color: #4dabf7;
+    color: white;
+    border-left: none; /* Supprime la bordure de gauche pour le bouton */
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    border-right: 1px solid #ccc
+  }
+
+.taper-le-texte {
+    background-color: transparent;
+  color: gray;
+  padding: 10px 10px;
+    border-top: 1px solid gray; /* Bordure seulement en haut */
+    border-bottom: 1px solid gray; /* Bordure seulement en bas */
+    border-left: none; /* Aucune bordure à gauche */
+    border-right: none; /* Aucune bordure à droite */
+    margin-bottom: 10px;
+}
+
+
+
+.white-button {
+    background-color: white; /* Définit la couleur de fond du bouton en bleu */
+    color: black; /* Définit la couleur du texte en blanc */
+    padding: 10px 20px; /* Ajoute un espace de remplissage autour du texte */
+    border: 1px solid gray;
+    border-radius: 5px;
+    cursor: pointer; /* Change le curseur lorsque survolé pour indiquer un clic possible */
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-bottom: 30px;
+  }
+  .search-container { display: flex;
+}
+
+.search-wrapper {
+    display: flex;
+    align-items: center;
+    border-right: 0px solid #ccc;
+  }
+.search-input-container {
+    flex: 1; /* Prend l'espace restant */
+    display: flex;
+    border-top: 10px solid gray; /* Bordure seulement en haut */
+    border-bottom: 10px solid gray; /* Bordure seulement en bas */
+    border-left: none; /* Aucune bordure à gauche */
+    border-right: none; /* Aucune bordure à droite */
+  }
+
+.search-container img {
+    display: flex;
+    margin-right: 0px; /* Marge à droite pour séparer l'image du champ de saisie */
+    padding: 8.4px 15px; 
+    border-top: 1px solid gray; /* Bordure seulement en haut */
+    border-bottom: 1px solid gray; /* Bordure seulement en bas */
+    border-left: 1px solid gray; /* Aucune bordure à gauche */
+    border-right: none; /* Aucune bordure à droite */
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.blue-button {
+    background-color: #0065FC; /* Définit la couleur de fond du bouton en bleu */
+    color: white; /* Définit la couleur du texte en blanc */
+    padding: 11px 20px; /* Ajoute un espace de remplissage autour du texte */
+    cursor: pointer; /* Change le curseur lorsque survolé pour indiquer un clic possible */
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-left: -20px solid #ccc;
+    border: none;
+    margin-bottom: 10px;
+}  
+
+#filter-container {
+    display: flex;
+    align-items: center;
+}
+
+#title {
+    margin-right: 20px;
+    /* Espacement entre le titre et les boutons */
+    margin-bottom: 50px;
+}
+
+button {
+    margin-right: 10px;
+    /* Espacement entre les boutons */
+}
+
+.icon-container-recher {
+    background-color: #f2f2f2;
+    /* Couleur de fond gris */
+    display: inline-block;
+    /* Permet de conserver la taille de l'icône */
+    padding: 10.5px;
+    /* Ajoute un espace à l'intérieur de la bordure */
+    vertical-align: middle;
+    /* Alignement vertical au milieu */
+    margin-bottom: 10px;
+    /* Réduire davantage l'espace en bas */
+    line-height: 1;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.icon-container i {
+    vertical-align: middle;
+    /* Aligner l'icône verticalement */
+}
+
+.white-button:hover {
+    background-color: #DEEBFF;
+    color: black;
+  }
+
+.lien-container {
+    text-align: right; /* Alignement du texte à droite */
+}
+
+.lien-hebergement, .lien-activite , .lien-filtre {
+    margin-left: 10px; /* Espacement entre les liens */
+    float: right; /* Alignement des liens à droite */
+    color: black; /* Couleur par défaut du texte */
+    text-decoration: none; /* Supprimer le soulignement par défaut */
+    transition: color 0.3s; /* Transition fluide pour le changement de couleur */
+}
+
+.lien-hebergement:hover, .lien-activite:hover, .lien-filtre:hover {
+    color: blue; /* Couleur du texte au survol */
+}
+body {
+    display: grid;
+    justify-content: center;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin-bottom: 2.5px; /* Ajoute de l'espace en dessous du sous-titre */
+  }
+  
+  /* Style pour le texte */
+  p {
+    margin-top: 2.5px; /* Ajoute de l'espace au-dessus du texte */
+    margin-bottom: 20px;
+  }
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.section-title {
+    margin-bottom: 20px;
+    margin: 0;
+    font-size: 22px;
+}
+
+.section-title-1{
+    margin-bottom: 20px;
+    margin: 1000;
+    font-size: 22px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.card img {
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 16px;
+}
+
+.euro {
+    font-weight: 700;
+}
+
+.neutral-star {
+    color: var(--main-bg-color)
+}
+
+/****** Hebergements And Populaires ***********/
+.hebergements-and-populaires {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.hebergements-and-populaires section {
+    background-color: var(--main-bg-color);
+    border-radius: 20px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+/****** Hebergements ***********/
+.hebergements {
+    width: 65%;
+}
+
+.hebergements-cards.card {
+    display: grid;
+    margin-top: 33px;
+    margin-left: 330px
+}
+
+.hebergements-cards img {
+    width: 5000px;
+    height: 136px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px; 
+}
+
+.container {
+    display: flex;
+  }
+  
+  .column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .box {
+    margin: 5px;
+    padding: 10px;
+}
+/****** Populaires ***********/
+.populaires {
+    width: 32%;
+}
+
+.populaires-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.populaires-cards .card {
+    display: flex;
+    margin-top: 33px;
+}
+
+.populaires-cards img {
+    width: 33%;
+    height: 136px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.populaires-cards .card-content {
+    width: 67%;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.populaires-cards .card-title {
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.populaires-cards .card-subtitle {
+    margin: 0;
+}
+
+.populaires-cards .card-rating {
+    margin-bottom: 5px;
+}
+
+/****** activites ***********/
+
+.card-txt-activites {
+    margin-left: 20px;
+}
+.activites-cards img {
+    width: 100%;
+    height: 350px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.activites-container {
+    font-size: 0; /* Pour éviter l'espacement entre les éléments */
+    display: flex;
+    justify-content: space-between; /* Pour répartir l'espace entre les éléments */
+    margin: auto; /* Pour centrer horizontalement */
+    max-width: 1200px;
+}
+
+.element {
+    display: inline-block;
+    width: 25%; /* Chaque élément occupe 25% de la largeur */
+    margin-left: -30px; /* Marge négative à gauche */
+    margin-right: -30px; 
+    padding: 0px;
+    box-sizing: border-box; /* Inclut la taille de la bordure et du padding dans la largeur */
+    font-size: 16px; /* Réinitialise la taille de police */
+    vertical-align: top; /* Aligne les éléments en haut */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: left;
+    text-align: left;
+    margin-left: 50px;
+    display: flex;
+    background-color: #f2f2f2; /* Couleur de fond gris */
+  padding: 10px;
+  margin-top: 50px;
+}
+
+.card-txt-footer {
+    margin-right: 300px; /* Ajoute une marge à droite de l'image pour séparer le texte */
+
+}
+.image-button img {
+    margin-right: 10px; /* Ajoute une marge à droite de l'image pour séparer le texte */
+  }
+
+/* Le code ci-dessous correspond à la version responsive uniquement */
+
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+@media (min-width:768px) and ( max-width: 1024px) {
+
+        .hebergements-and-populaires {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .hebergements
+    {
+
+        width: 100%;
+        flex: 1;
+        flex-direction: column;
+    }
+    
+    .populaires {
+        width: 100%;
+        margin-top: 50px;
+        flex: 1;
+        flex-direction: column;
+    }
+
+    .activites {margin-left:50px;
+        flex-direction: column;
+
+    }
+
+    .footer{
+        width: 100%;
+        margin-left:50px;
+    }
+    
+    .populaires-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .populaires-cards a {
+        width: 30%;
+    }
+    
+    .populaires-cards .card-title {
+        font-size: 14px;
+    }
+    
+    .populaires-cards .card-subtitle {
+        font-size: 13px;
+    }
+}
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767px) { 
+    .hebergements-and-populaires {
+    flex-direction: column;
+}
+
+.hebergements {
+    width: 100%;
+}
+
+.populaires {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.populaires-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.populaires-cards a {
+    width: 30%;
+}
+
+.populaires-cards .card-title {
+    font-size: 14px;
+}
+
+.populaires-cards .card-subtitle {
+    font-size: 13px;
+}
+    /* ... */
+}
