@@ -12,104 +12,142 @@
 .fa-solid {
     color: var(--main-color);
 }
+
 .search-icon {
-  padding: 0; /* Supprime le rembourrage pour l'icône */
+    padding: 0;
+    /* Supprime le rembourrage pour l'icône */
 }
 
 .search-input {
-  flex: 1;
-  border-left: none; /* Supprime la bordure de gauche pour le champ de recherche */
-  margin-right: -100px;
+    flex: 1;
+    border-left: none;
+    /* Supprime la bordure de gauche pour le champ de recherche */
+    margin-right: -100px;
 }
 
 .search-button {
     background-color: #4dabf7;
     color: white;
-    border-left: none; /* Supprime la bordure de gauche pour le bouton */
+    border-left: none;
+    /* Supprime la bordure de gauche pour le bouton */
     padding: 5px 10px;
     cursor: pointer;
     border-radius: 5px;
     border: 1px solid #ccc;
     border-right: 1px solid #ccc
-  }
+}
 
 .taper-le-texte {
     background-color: transparent;
-  color: gray;
-  padding: 10px 10px;
-    border-top: 1px solid gray; /* Bordure seulement en haut */
-    border-bottom: 1px solid gray; /* Bordure seulement en bas */
-    border-left: none; /* Aucune bordure à gauche */
-    border-right: none; /* Aucune bordure à droite */
+    color: gray;
+    padding: 10px 10px;
+    border-top: 1px solid gray;
+    /* Bordure seulement en haut */
+    border-bottom: 1px solid gray;
+    /* Bordure seulement en bas */
+    border-left: none;
+    /* Aucune bordure à gauche */
+    border-right: none;
+    /* Aucune bordure à droite */
     margin-bottom: 10px;
 }
 
 
 
 .white-button {
-    background-color: white; /* Définit la couleur de fond du bouton en bleu */
-    color: black; /* Définit la couleur du texte en blanc */
-    padding: 10px 20px; /* Ajoute un espace de remplissage autour du texte */
+    background-color: white;
+    /* Définit la couleur de fond du bouton en bleu */
+    color: black;
+    /* Définit la couleur du texte en blanc */
+    padding: 10px 20px;
+    /* Ajoute un espace de remplissage autour du texte */
     border: 1px solid gray;
     border-radius: 5px;
-    cursor: pointer; /* Change le curseur lorsque survolé pour indiquer un clic possible */
+    cursor: pointer;
+    /* Change le curseur lorsque survolé pour indiquer un clic possible */
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
     margin-bottom: 30px;
-  }
-  .search-container { display: flex;
+}
+
+.search-container {
+    display: flex;
 }
 
 .search-wrapper {
     display: flex;
     align-items: center;
     border-right: 0px solid #ccc;
-  }
+}
+
 .search-input-container {
-    flex: 1; /* Prend l'espace restant */
+    flex: 1;
+    /* Prend l'espace restant */
     display: flex;
-    border-top: 10px solid gray; /* Bordure seulement en haut */
-    border-bottom: 10px solid gray; /* Bordure seulement en bas */
-    border-left: none; /* Aucune bordure à gauche */
-    border-right: none; /* Aucune bordure à droite */
-  }
+    border-top: 10px solid gray;
+    /* Bordure seulement en haut */
+    border-bottom: 10px solid gray;
+    /* Bordure seulement en bas */
+    border-left: none;
+    /* Aucune bordure à gauche */
+    border-right: none;
+    /* Aucune bordure à droite */
+}
 
 .search-container img {
     display: flex;
-    margin-right: 0px; /* Marge à droite pour séparer l'image du champ de saisie */
-    padding: 8.4px 15px; 
-    border-top: 1px solid gray; /* Bordure seulement en haut */
-    border-bottom: 1px solid gray; /* Bordure seulement en bas */
-    border-left: 1px solid gray; /* Aucune bordure à gauche */
-    border-right: none; /* Aucune bordure à droite */
+    margin-right: 0px;
+    /* Marge à droite pour séparer l'image du champ de saisie */
+    padding: 8.4px 15px;
+    border-top: 1px solid gray;
+    /* Bordure seulement en haut */
+    border-bottom: 1px solid gray;
+    /* Bordure seulement en bas */
+    border-left: 1px solid gray;
+    /* Aucune bordure à gauche */
+    border-right: none;
+    /* Aucune bordure à droite */
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     margin-bottom: 10px;
 }
 
 .blue-button {
-    background-color: #0065FC; /* Définit la couleur de fond du bouton en bleu */
-    color: white; /* Définit la couleur du texte en blanc */
-    padding: 11px 20px; /* Ajoute un espace de remplissage autour du texte */
-    cursor: pointer; /* Change le curseur lorsque survolé pour indiquer un clic possible */
+    background-color: #0065FC;
+    /* Définit la couleur de fond du bouton en bleu */
+    color: white;
+    /* Définit la couleur du texte en blanc */
+    padding: 11px 20px;
+    /* Ajoute un espace de remplissage autour du texte */
+    cursor: pointer;
+    /* Change le curseur lorsque survolé pour indiquer un clic possible */
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     border-left: -20px solid #ccc;
     border: none;
     margin-bottom: 10px;
-}  
+}
 
 #filter-container {
     display: flex;
-    align-items: center;
+    align-items: center
 }
 
 #title {
     margin-right: 20px;
     /* Espacement entre le titre et les boutons */
     margin-bottom: 50px;
+}
+
+.title-filter {
+    margin-right: 20px;
+    /* Espacement entre le titre et les boutons */
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 button {
@@ -141,25 +179,76 @@ button {
 .white-button:hover {
     background-color: #DEEBFF;
     color: black;
-  }
+}
 
 .lien-container {
-    text-align: right; /* Alignement du texte à droite */
+    text-align: right;
+    /* Alignement du texte à droite */
 }
 
-.lien-hebergement, .lien-activite , .lien-filtre {
-    margin-left: 10px; /* Espacement entre les liens */
-    float: right; /* Alignement des liens à droite */
-    color: black; /* Couleur par défaut du texte */
-    text-decoration: none; /* Supprimer le soulignement par défaut */
-    transition: color 0.3s; /* Transition fluide pour le changement de couleur */
+
+.lien-hebergement {
+    margin-right: 100px;
+    margin-top: -50px;
+    float: right;
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s;
+
+
 }
 
-.lien-hebergement:hover, .lien-activite:hover, .lien-filtre:hover {
-    color: blue; /* Couleur du texte au survol */
+.lien-activite {
+    margin-left: 1000px;
+    padding-left: 50px;
+    margin-top: -50px;
+    float: right;
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s;
 }
+
+.lien-filtre {
+    margin-left: 2px;
+    float: right;
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.lien-afficher {
+    color: black;
+    font-weight: bold; 
+    margin-left: 20px;
+}
+
+.lien-hebergement:hover {
+    color: var(--main-color);
+    border-top: solid 0.2rem var(--main-color);
+    padding-top: 1.2rem;
+    cursor: auto;
+    color: blue;
+    /* Couleur du texte au survol */
+}
+
+.lien-activite:hover {
+    color: var(--main-color);
+    border-top: solid 0.2rem var(--main-color);
+    /* Réduire la largeur de la barre */
+    padding-left: 0.2rem;
+    padding-top: 1.2rem;
+    color: blue;
+
+}
+
+.lien-filtre:hover {
+    color: blue;
+
+}
+
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -171,14 +260,16 @@ body {
 }
 
 h1 {
-    margin-bottom: 2.5px; /* Ajoute de l'espace en dessous du sous-titre */
-  }
-  
-  /* Style pour le texte */
-  p {
-    margin-top: 2.5px; /* Ajoute de l'espace au-dessus du texte */
+    margin-bottom: 2.5px;
+    /* Ajoute de l'espace en dessous du sous-titre */
+}
+
+/* Style pour le texte */
+p {
+    margin-top: 2.5px;
+    /* Ajoute de l'espace au-dessus du texte */
     margin-bottom: 20px;
-  }
+}
 
 a {
     color: inherit;
@@ -191,7 +282,7 @@ a {
     font-size: 22px;
 }
 
-.section-title-1{
+.section-title-1 {
     margin-bottom: 20px;
     margin: 1000;
     font-size: 22px;
@@ -241,32 +332,33 @@ a {
 }
 
 .hebergements-cards.card {
-    display: grid;
+    display: flex;
     margin-top: 33px;
     margin-left: 330px
 }
 
 .hebergements-cards img {
-    width: 5000px;
+    width: 100%;
     height: 136px;
     border-top-left-radius: 10px;
-    border-top-right-radius: 10px; 
+    border-top-right-radius: 10px;
 }
 
 .container {
     display: flex;
-  }
-  
-  .column {
+}
+
+.column {
     flex: 1;
     display: flex;
     flex-direction: column;
-  }
-  
-  .box {
+}
+
+.box {
     margin: 5px;
     padding: 10px;
 }
+
 /****** Populaires ***********/
 .populaires {
     width: 32%;
@@ -317,29 +409,39 @@ a {
 .card-txt-activites {
     margin-left: 20px;
 }
+
 .activites-cards img {
     width: 100%;
     height: 350px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
+
 .activites-container {
-    font-size: 0; /* Pour éviter l'espacement entre les éléments */
+    font-size: 0;
+    /* Pour éviter l'espacement entre les éléments */
     display: flex;
-    justify-content: space-between; /* Pour répartir l'espace entre les éléments */
-    margin: auto; /* Pour centrer horizontalement */
+    justify-content: space-between;
+    /* Pour répartir l'espace entre les éléments */
+    margin: auto;
+    /* Pour centrer horizontalement */
     max-width: 1200px;
 }
 
 .element {
     display: inline-block;
-    width: 25%; /* Chaque élément occupe 25% de la largeur */
-    margin-left: -30px; /* Marge négative à gauche */
-    margin-right: -30px; 
+    width: 25%;
+    /* Chaque élément occupe 25% de la largeur */
+    margin-left: -30px;
+    /* Marge négative à gauche */
+    margin-right: -30px;
     padding: 0px;
-    box-sizing: border-box; /* Inclut la taille de la bordure et du padding dans la largeur */
-    font-size: 16px; /* Réinitialise la taille de police */
-    vertical-align: top; /* Aligne les éléments en haut */
+    box-sizing: border-box;
+    /* Inclut la taille de la bordure et du padding dans la largeur */
+    font-size: 16px;
+    /* Réinitialise la taille de police */
+    vertical-align: top;
+    /* Aligne les éléments en haut */
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     border-top-left-radius: 10px;
@@ -347,48 +449,87 @@ a {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
+
 .container {
     display: flex;
     justify-content: space-between;
-  }
-
-  .footer {
-    display: flex;
-    justify-content: left;
-    text-align: left;
-    margin-left: 50px;
-    display: flex;
-    background-color: #f2f2f2; /* Couleur de fond gris */
-  padding: 10px;
-  margin-top: 50px;
 }
 
-.card-txt-footer {
-    margin-right: 300px; /* Ajoute une marge à droite de l'image pour séparer le texte */
-
+.search-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    padding: 5px 0 0 20px;
+    gap: 30px;
+    background-color: #F2F2F2;
+    font-size: 16px;
+    margin-top: 50px;
+    margin-right: 80px;
+    margin-left: 140px
 }
+
+.search-footer>div {
+    align-items: center;
+    gap: 150px;
+    width: 100%;
+    height: 200px;
+}
+
+.search-footer h2 {
+    font-size: 22px;
+}
+
 .image-button img {
-    margin-right: 10px; /* Ajoute une marge à droite de l'image pour séparer le texte */
-  }
+    margin-right: 10px;
+    /* Ajoute une marge à droite de l'image pour séparer le texte */
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
-@media (min-width:768px) and ( max-width: 1024px) {
+@media (min-width:768px) and (max-width: 1024px) {
 
-        .hebergements-and-populaires {
+    .title-filter {
+        margin-right: 1800px;
+        /* Espacement entre le titre et les boutons */
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 20px;
+        font-weight: bold;
+}
+
+.lien-filtre {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Optional: adds space between the columns */
+    text-align: center;
+    gap: 20px; /* Optional: space between columns */
+    padding: 20px; 
+    border: 1px solid #ccc;
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#filter-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+    .hebergements-and-populaires {
         flex-direction: column;
         justify-content: center;
     }
-    .hebergements
-    {
+
+    .hebergements {
 
         width: 100%;
         flex: 1;
         flex-direction: column;
     }
-    
+
     .populaires {
         width: 100%;
         margin-top: 50px;
@@ -396,66 +537,246 @@ a {
         flex-direction: column;
     }
 
-    .activites {margin-left:50px;
+    .activites {
+        margin-left: 50px;
         flex-direction: column;
 
     }
 
-    .footer{
+    .footer {
         width: 100%;
-        margin-left:50px;
+        margin-left: 50px;
     }
-    
+
     .populaires-cards {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
-    
+
     .populaires-cards a {
         width: 30%;
     }
-    
+
     .populaires-cards .card-title {
         font-size: 14px;
     }
-    
+
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767px) { 
+@media (max-width: 767px) {
+
+    .logo-container{
+        width: 80%;
+        margin-left: 95px;
+        justify-content: center;
+    }
+
+    .lien-hebergement {
+        display: flex;
+        justify-content: left;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: -30px;
+        margin-right: 50px;
+        float: right;
+        color: black;
+        text-decoration: none;
+        transition: color 0.3s;
+        font-size: 20px;
+    }
+
+    .lien-activite {
+        display: flex;
+        justify-content: right;
+        margin-top: 20px;
+        margin-right: 50px;
+        margin-left: 0px;
+        margin-bottom: 20px;
+        float: right;
+        /* Alignement des liens à droite */
+        color: black;
+        /* Couleur par défaut du texte */
+        text-decoration: none;
+        /* Supprimer le soulignement par défaut */
+        transition: color 0.3s;
+        /* Transition fluide pour le changement de couleur */
+        font-size: 20px;
+    }
+
+    .lien-hebergement:hover {
+        color: var(--main-color);
+        border-top: solid 0.2rem var(--main-color);
+        padding-bottom: 1.2rem;
+        cursor: auto;
+        color: blue;
+        /* Couleur du texte au survol */
+    }
+    
+    .lien-activite:hover {
+        color: var(--main-color);
+        border-top: solid 0.2rem var(--main-color);
+        /* Réduire la largeur de la barre */
+        padding-left: 0.2rem;
+        padding-bottom: 1.2rem;
+        color: blue;
+    
+    }
+
+    #title {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px; /* Adds space between the title and filters */
+        text-align: center;
+        margin-bottom: 80px;
+        margin-top: 80px;
+    }
+
+    .lien-filtre {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Optional: adds space between the columns */
+        text-align: center;
+        gap: 20px; /* Optional: space between columns */
+        padding: 20px; 
+        border: 1px solid #ccc;
+        color: black;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    #filter-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .title-filter {
+        margin-right: 200px;
+        /* Espacement entre le titre et les boutons */
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 20px;
+        font-weight: bold;
+}
+
     .hebergements-and-populaires {
-    flex-direction: column;
-}
+        flex-direction: column-reverse;
+    }
 
-.hebergements {
-    width: 100%;
-}
+    .hebergements {
+        width: 100%;
+        margin-top: 50px;
+        flex-direction: column;
+    }
 
-.populaires {
-    width: 100%;
-    margin-top: 50px;
-}
+    .hebergements-cards {
+        display: flex;
+        flex-direction: column;
+    }
 
-.populaires-cards {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
+    .hebergements-cards img {
+        width: 100%;
+        /* Ajustez la largeur à 100% pour qu'elle prenne toute la largeur du conteneur */
+        height: 136px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
 
-.populaires-cards a {
-    width: 30%;
-}
+    .populaires {
+        width: 100%;
+        margin-top: 50px;
+    }
 
-.populaires-cards .card-title {
-    font-size: 14px;
-}
+    .populaires-cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 
-.populaires-cards .card-subtitle {
-    font-size: 13px;
-}
+    .populaires-cards a {
+        width: 100%;
+    }
+
+    .populaires-cards .card-title {
+        font-size: 14px;
+    }
+
+    .populaires-cards .card-subtitle {
+        font-size: 13px;
+    }
+
+    .activites {
+        width: 100%;
+        margin-top: 50px;
+        flex-direction: column;
+    }
+
+    .activites-cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .activites-cards img {
+        width: 100%;
+        /* Ajustez la largeur à 100% pour qu'elle prenne toute la largeur du conteneur */
+        height: 200px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .activites-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .element {
+        display: inline-block;
+        width: 100%;
+        margin-top: 20px;
+        margin-left: -0px;
+        margin-right: -30px;
+        padding: 0px;
+        box-sizing: border-box;
+        /* Inclut la taille de la bordure et du padding dans la largeur */
+        font-size: 16px;
+        /* Réinitialise la taille de police */
+        vertical-align: top;
+        /* Aligne les éléments en haut */
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    .search-footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        width: 100%;
+        padding: 5px 0 0 10px;
+        gap: 5px;
+        background-color: #F2F2F2;
+        font-size: 10px;
+        margin-top: 50px;
+        margin-right: 80px;
+        margin-left: -60px
+    }
+
+    .search-footer>div {
+        gap: 2px;
+        width: 40%;
+        height: 163px;
+    }
+
+    .search-footer h2 {
+        font-size: 15px;
+    }
     /* ... */
 }
