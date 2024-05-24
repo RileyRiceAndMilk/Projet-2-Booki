@@ -74,10 +74,6 @@
 
 .search-container {
     display: flex;
-}
-
-.search-wrapper {
-    display: flex;
     align-items: center;
     border-right: 0px solid #ccc;
 }
@@ -99,16 +95,11 @@
 .search-container img {
     display: flex;
     margin-right: 0px;
-    /* Marge à droite pour séparer l'image du champ de saisie */
     padding: 8.4px 15px;
     border-top: 1px solid gray;
-    /* Bordure seulement en haut */
     border-bottom: 1px solid gray;
-    /* Bordure seulement en bas */
     border-left: 1px solid gray;
-    /* Aucune bordure à gauche */
     border-right: none;
-    /* Aucune bordure à droite */
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     margin-bottom: 10px;
@@ -116,7 +107,6 @@
 
 .blue-button {
     background-color: #0065FC;
-    /* Définit la couleur de fond du bouton en bleu */
     color: white;
     /* Définit la couleur du texte en blanc */
     padding: 11px 20px;
@@ -186,7 +176,6 @@ button {
     /* Alignement du texte à droite */
 }
 
-
 .lien-hebergement {
     margin-right: 100px;
     margin-top: -50px;
@@ -194,8 +183,9 @@ button {
     color: black;
     text-decoration: none;
     transition: color 0.3s;
-
-
+    border-top: solid 0.2rem transparent;
+    /* Bordure transparente */
+    padding-top: 0.1em;
 }
 
 .lien-activite {
@@ -206,6 +196,9 @@ button {
     color: black;
     text-decoration: none;
     transition: color 0.3s;
+    border-top: solid 0.2rem transparent;
+    /* Bordure transparente */
+    padding-top: 0.1rem;
 }
 
 .lien-filtre {
@@ -218,17 +211,16 @@ button {
 
 .lien-afficher {
     color: black;
-    font-weight: bold; 
+    font-weight: bold;
     margin-left: 20px;
 }
 
 .lien-hebergement:hover {
     color: var(--main-color);
     border-top: solid 0.2rem var(--main-color);
-    padding-top: 1.2rem;
+    padding-top: 0.1rem;
     cursor: auto;
     color: blue;
-    /* Couleur du texte au survol */
 }
 
 .lien-activite:hover {
@@ -236,7 +228,7 @@ button {
     border-top: solid 0.2rem var(--main-color);
     /* Réduire la largeur de la barre */
     padding-left: 0.2rem;
-    padding-top: 1.2rem;
+    padding-top: 0.1rem;
     color: blue;
 
 }
@@ -250,10 +242,11 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: auto;
 }
 
 .main-container {
-    width: 100%;
+    width: 100px;
     max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
@@ -282,12 +275,6 @@ a {
     font-size: 22px;
 }
 
-.section-title-1 {
-    margin-bottom: 20px;
-    margin: 1000;
-    font-size: 22px;
-}
-
 .card {
     background-color: white;
     border-radius: 20px;
@@ -297,10 +284,6 @@ a {
 
 .card img {
     object-fit: cover;
-}
-
-.card-title {
-    font-size: 16px;
 }
 
 .euro {
@@ -329,6 +312,11 @@ a {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+}
+
+.hebergement-titre {
+    font-size: 20px;
+
 }
 
 .hebergements-cards.card {
@@ -362,12 +350,17 @@ a {
 /****** Populaires ***********/
 .populaires {
     width: 32%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .populaires-title {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    margin-bottom: 20px;
+    font-size: 15px;
+    text-align: left;
+    /* Alignement à gauche du titre de section */
 }
 
 .populaires-cards .card {
@@ -393,21 +386,34 @@ a {
 
 .populaires-cards .card-title {
     margin-top: 10px;
-    margin-bottom: 4px;
+    margin-bottom: 0px;
+    text-align: left;
+    /* Alignement à gauche du titre de la carte */
 }
 
 .populaires-cards .card-subtitle {
     margin: 0;
+    text-align: left;
+    /* Alignement à gauche du sous-titre de la carte */
 }
 
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 }
 
+
+
 /****** activites ***********/
 
 .card-txt-activites {
     margin-left: 20px;
+    font-size: 16px;
+}
+
+.Activites-title {
+    margin-bottom: 20px;
+    margin: 1000;
+    font-size: 15px;
 }
 
 .activites-cards img {
@@ -417,14 +423,11 @@ a {
     border-top-right-radius: 10px;
 }
 
-.activites-container {
+.activites-cards {
     font-size: 0;
-    /* Pour éviter l'espacement entre les éléments */
     display: flex;
     justify-content: space-between;
-    /* Pour répartir l'espace entre les éléments */
     margin: auto;
-    /* Pour centrer horizontalement */
     max-width: 1200px;
 }
 
@@ -465,7 +468,6 @@ a {
     background-color: #F2F2F2;
     font-size: 16px;
     margin-top: 50px;
-    margin-right: 80px;
     margin-left: 140px
 }
 
@@ -482,7 +484,6 @@ a {
 
 .image-button img {
     margin-right: 10px;
-    /* Ajoute une marge à droite de l'image pour séparer le texte */
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -498,25 +499,27 @@ a {
         margin-bottom: 20px;
         font-size: 20px;
         font-weight: bold;
-}
+    }
 
-.lien-filtre {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* Optional: adds space between the columns */
-    text-align: center;
-    gap: 20px; /* Optional: space between columns */
-    padding: 20px; 
-    border: 1px solid #ccc;
-    color: black;
-    text-decoration: none;
-    transition: color 0.3s;
-}
+    .lien-filtre {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* Optional: adds space between the columns */
+        text-align: center;
+        gap: 20px;
+        /* Optional: space between columns */
+        padding: 20px;
+        border: 1px solid #ccc;
+        color: black;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
 
-#filter-container {
-    display: flex;
-    flex-wrap: wrap;
-}
+    #filter-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
 
     .hebergements-and-populaires {
         flex-direction: column;
@@ -570,7 +573,7 @@ a {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767px) {
 
-    .logo-container{
+    .logo-container {
         width: 80%;
         margin-left: 95px;
         justify-content: center;
@@ -616,7 +619,7 @@ a {
         color: blue;
         /* Couleur du texte au survol */
     }
-    
+
     .lien-activite:hover {
         color: var(--main-color);
         border-top: solid 0.2rem var(--main-color);
@@ -624,13 +627,14 @@ a {
         padding-left: 0.2rem;
         padding-bottom: 1.2rem;
         color: blue;
-    
+
     }
 
     #title {
         font-size: 24px;
         font-weight: bold;
-        margin-bottom: 20px; /* Adds space between the title and filters */
+        margin-bottom: 20px;
+        /* Adds space between the title and filters */
         text-align: center;
         margin-bottom: 80px;
         margin-top: 80px;
@@ -639,10 +643,10 @@ a {
     .lien-filtre {
         display: flex;
         flex-direction: column;
-        justify-content: space-between; /* Optional: adds space between the columns */
+        justify-content: space-between;
         text-align: center;
-        gap: 20px; /* Optional: space between columns */
-        padding: 20px; 
+        gap: 20px;
+        padding: 20px;
         border: 1px solid #ccc;
         color: black;
         text-decoration: none;
@@ -653,14 +657,17 @@ a {
         display: flex;
         flex-wrap: wrap;
     }
+
     .title-filter {
-        margin-right: 200px;
-        /* Espacement entre le titre et les boutons */
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        text-align: center;
         margin-top: 20px;
         margin-bottom: 20px;
         font-size: 20px;
         font-weight: bold;
-}
+    }
 
     .hebergements-and-populaires {
         flex-direction: column-reverse;
@@ -684,6 +691,7 @@ a {
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
     }
+
     .container {
         display: flex;
         flex-direction: column;
@@ -730,10 +738,7 @@ a {
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
     }
-    .activites-container {
-        display: flex;
-        flex-direction: column;
-    }
+
     .element {
         display: inline-block;
         width: 100%;
@@ -778,5 +783,6 @@ a {
     .search-footer h2 {
         font-size: 15px;
     }
+
     /* ... */
 }
