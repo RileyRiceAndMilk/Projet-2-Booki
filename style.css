@@ -15,13 +15,11 @@
 
 .search-icon {
     padding: 0;
-    /* Supprime le rembourrage pour l'icône */
 }
 
 .search-input {
     flex: 1;
     border-left: none;
-    /* Supprime la bordure de gauche pour le champ de recherche */
     margin-right: -100px;
 }
 
@@ -29,7 +27,6 @@
     background-color: #4dabf7;
     color: white;
     border-left: none;
-    /* Supprime la bordure de gauche pour le bouton */
     padding: 5px 10px;
     cursor: pointer;
     border-radius: 5px;
@@ -42,13 +39,9 @@
     color: gray;
     padding: 10px 10px;
     border-top: 1px solid gray;
-    /* Bordure seulement en haut */
     border-bottom: 1px solid gray;
-    /* Bordure seulement en bas */
     border-left: none;
-    /* Aucune bordure à gauche */
     border-right: none;
-    /* Aucune bordure à droite */
     margin-bottom: 10px;
 }
 
@@ -56,15 +49,11 @@
 
 .white-button {
     background-color: white;
-    /* Définit la couleur de fond du bouton en bleu */
     color: black;
-    /* Définit la couleur du texte en blanc */
     padding: 10px 20px;
-    /* Ajoute un espace de remplissage autour du texte */
     border: 1px solid gray;
     border-radius: 5px;
     cursor: pointer;
-    /* Change le curseur lorsque survolé pour indiquer un clic possible */
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -80,16 +69,11 @@
 
 .search-input-container {
     flex: 1;
-    /* Prend l'espace restant */
     display: flex;
     border-top: 10px solid gray;
-    /* Bordure seulement en haut */
     border-bottom: 10px solid gray;
-    /* Bordure seulement en bas */
     border-left: none;
-    /* Aucune bordure à gauche */
     border-right: none;
-    /* Aucune bordure à droite */
 }
 
 .search-container img {
@@ -108,11 +92,8 @@
 .blue-button {
     background-color: #0065FC;
     color: white;
-    /* Définit la couleur du texte en blanc */
     padding: 11px 20px;
-    /* Ajoute un espace de remplissage autour du texte */
     cursor: pointer;
-    /* Change le curseur lorsque survolé pour indiquer un clic possible */
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     border-left: -20px solid #ccc;
@@ -127,13 +108,11 @@
 
 #title {
     margin-right: 20px;
-    /* Espacement entre le titre et les boutons */
     margin-bottom: 50px;
 }
 
 .title-filter {
     margin-right: 20px;
-    /* Espacement entre le titre et les boutons */
     margin-top: 20px;
     margin-bottom: 50px;
     font-size: 20px;
@@ -142,20 +121,14 @@
 
 button {
     margin-right: 10px;
-    /* Espacement entre les boutons */
 }
 
 .icon-container-recher {
     background-color: #f2f2f2;
-    /* Couleur de fond gris */
     display: inline-block;
-    /* Permet de conserver la taille de l'icône */
     padding: 10.5px;
-    /* Ajoute un espace à l'intérieur de la bordure */
     vertical-align: middle;
-    /* Alignement vertical au milieu */
     margin-bottom: 10px;
-    /* Réduire davantage l'espace en bas */
     line-height: 1;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -163,7 +136,6 @@ button {
 
 .icon-container i {
     vertical-align: middle;
-    /* Aligner l'icône verticalement */
 }
 
 .white-button:hover {
@@ -173,7 +145,6 @@ button {
 
 .lien-container {
     text-align: right;
-    /* Alignement du texte à droite */
 }
 
 .lien-hebergement {
@@ -184,7 +155,6 @@ button {
     text-decoration: none;
     transition: color 0.3s;
     border-top: solid 0.2rem transparent;
-    /* Bordure transparente */
     padding-top: 0.1em;
 }
 
@@ -197,7 +167,6 @@ button {
     text-decoration: none;
     transition: color 0.3s;
     border-top: solid 0.2rem transparent;
-    /* Bordure transparente */
     padding-top: 0.1rem;
 }
 
@@ -226,7 +195,6 @@ button {
 .lien-activite:hover {
     color: var(--main-color);
     border-top: solid 0.2rem var(--main-color);
-    /* Réduire la largeur de la barre */
     padding-left: 0.2rem;
     padding-top: 0.1rem;
     color: blue;
@@ -254,13 +222,9 @@ body {
 
 h1 {
     margin-bottom: 2.5px;
-    /* Ajoute de l'espace en dessous du sous-titre */
 }
-
-/* Style pour le texte */
 p {
     margin-top: 2.5px;
-    /* Ajoute de l'espace au-dessus du texte */
     margin-bottom: 20px;
 }
 
@@ -353,6 +317,7 @@ a {
     display: flex;
     align-items: center;
     flex-direction: column;
+    max-width: 1200px;
 }
 
 .populaires-title {
@@ -360,7 +325,6 @@ a {
     margin-bottom: 20px;
     font-size: 15px;
     text-align: left;
-    /* Alignement à gauche du titre de section */
 }
 
 .populaires-cards .card {
@@ -388,13 +352,11 @@ a {
     margin-top: 10px;
     margin-bottom: 0px;
     text-align: left;
-    /* Alignement à gauche du titre de la carte */
 }
 
 .populaires-cards .card-subtitle {
     margin: 0;
     text-align: left;
-    /* Alignement à gauche du sous-titre de la carte */
 }
 
 .populaires-cards .card-rating {
@@ -434,17 +396,12 @@ a {
 .element {
     display: inline-block;
     width: 25%;
-    /* Chaque élément occupe 25% de la largeur */
     margin-left: -30px;
-    /* Marge négative à gauche */
     margin-right: -30px;
     padding: 0px;
     box-sizing: border-box;
-    /* Inclut la taille de la bordure et du padding dans la largeur */
     font-size: 16px;
-    /* Réinitialise la taille de police */
     vertical-align: top;
-    /* Aligne les éléments en haut */
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     border-top-left-radius: 10px;
@@ -494,7 +451,6 @@ a {
 
     .title-filter {
         margin-right: 1800px;
-        /* Espacement entre le titre et les boutons */
         margin-top: 20px;
         margin-bottom: 20px;
         font-size: 20px;
@@ -505,10 +461,8 @@ a {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        /* Optional: adds space between the columns */
         text-align: center;
         gap: 20px;
-        /* Optional: space between columns */
         padding: 20px;
         border: 1px solid #ccc;
         color: black;
@@ -601,13 +555,9 @@ a {
         margin-left: 0px;
         margin-bottom: 20px;
         float: right;
-        /* Alignement des liens à droite */
         color: black;
-        /* Couleur par défaut du texte */
         text-decoration: none;
-        /* Supprimer le soulignement par défaut */
         transition: color 0.3s;
-        /* Transition fluide pour le changement de couleur */
         font-size: 20px;
     }
 
@@ -617,13 +567,11 @@ a {
         padding-bottom: 1.2rem;
         cursor: auto;
         color: blue;
-        /* Couleur du texte au survol */
     }
 
     .lien-activite:hover {
         color: var(--main-color);
         border-top: solid 0.2rem var(--main-color);
-        /* Réduire la largeur de la barre */
         padding-left: 0.2rem;
         padding-bottom: 1.2rem;
         color: blue;
@@ -634,7 +582,6 @@ a {
         font-size: 24px;
         font-weight: bold;
         margin-bottom: 20px;
-        /* Adds space between the title and filters */
         text-align: center;
         margin-bottom: 80px;
         margin-top: 80px;
@@ -686,7 +633,6 @@ a {
 
     .hebergements-cards img {
         width: 100%;
-        /* Ajustez la largeur à 100% pour qu'elle prenne toute la largeur du conteneur */
         height: 136px;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
@@ -733,7 +679,6 @@ a {
 
     .activites-cards img {
         width: 100%;
-        /* Ajustez la largeur à 100% pour qu'elle prenne toute la largeur du conteneur */
         height: 200px;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
@@ -747,11 +692,8 @@ a {
         margin-right: -30px;
         padding: 0px;
         box-sizing: border-box;
-        /* Inclut la taille de la bordure et du padding dans la largeur */
         font-size: 16px;
-        /* Réinitialise la taille de police */
         vertical-align: top;
-        /* Aligne les éléments en haut */
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
         overflow: hidden;
         border-top-left-radius: 10px;
