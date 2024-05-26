@@ -264,6 +264,8 @@ a {
     justify-content: space-between;
     margin-bottom: 40px;
     margin-top: 40px;
+    max-width: 1440px;
+
 }
 
 .hebergements-and-populaires section {
@@ -438,6 +440,7 @@ a {
 .search-footer h2 {
     font-size: 22px;
 }
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
@@ -641,6 +644,9 @@ a {
     .populaires {
         width: 100%;
         margin-top: 50px;
+        display: flex;
+        align-items: center;
+        max-width: 1200px;
     }
 
     .populaires-cards {
