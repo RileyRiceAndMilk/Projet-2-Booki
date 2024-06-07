@@ -367,12 +367,9 @@ a {
 
 /****** activites ***********/
 
-.card-txt-activites {
-    margin-left: 20px;
-    font-size: 16px;
-}
-
 .Activites-title {
+    display: flex;
+    text-align: left;
     margin-bottom: 20px;
     margin: 1000;
     font-size: 15px;
@@ -380,39 +377,36 @@ a {
 
 .activites-cards img {
     width: 100%;
-    height: 350px;
+    height: 380px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    display: flex;
+    text-align: left;
 }
 
 .activites-cards {
     font-size: 0;
     display: flex;
     justify-content: space-between;
+    gap: 10px;
     margin: auto;
-    max-width: 1200px;
+    max-width: 1300px;
+}
+
+.card-txt-activites {
+    margin-left: 20px;
+    font-size: 16px;
 }
 
 .element {
     display: inline-block;
     width: 25%;
-    margin-left: -30px;
-    margin-right: -30px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-size: 16px;
-    vertical-align: top;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-}
 
-.container {
-    display: flex;
-    justify-content: space-between;
 }
 
 .search-footer {
@@ -470,31 +464,20 @@ a {
         font-size: 13px;
     }
 
-    .activites {
-        display: flex;
-        align-items: center;
-    }
-
-    .Activites-title {
-        display: flex;
-        align-items: left; 
-        margin-bottom: 20px;
-        font-size: 15px;
-    }
-
     .activites-cards img {
-        width: 250px; 
-        height: 200px; 
-        display: block; 
-        object-fit: cover; 
-        max-height: 200px; 
+        width: 100%;
+        height: 200px;
+        display: block;
+        object-fit: cover;
+        max-height: 200px;
     }
+
     .search-footer {
         width: 900px;
         display: flex;
-        align-items: left;  
-        gap:100px;
-        margin-top: 50px; 
+        align-items: left;
+        gap: 100px;
+        margin-top: 50px;
     }
 
 }
