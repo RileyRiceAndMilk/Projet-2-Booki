@@ -3,9 +3,8 @@
     font-family: 'Raleway', sans-serif;
 }
 
-.logo-container {
-    width: 10px;
-    /* Spécifiez la largeur souhaitée */
+.logo {
+    width: 50px;
     height: auto;
 }
 
