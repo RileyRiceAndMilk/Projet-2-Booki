@@ -3,6 +3,12 @@
     font-family: 'Raleway', sans-serif;
 }
 
+.logo-container {
+    width: 10px;
+    /* Spécifiez la largeur souhaitée */
+    height: auto;
+}
+
 :root {
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
@@ -194,7 +200,8 @@ a {
 }
 
 .lien-hebergement {
-    margin-right: 100px;
+    display: flex;
+    flex-direction: row; 
     margin-top: -50px;
     float: right;
     color: black;
@@ -205,9 +212,9 @@ a {
 }
 
 .lien-activite {
-    margin-left: 1000px;
+    display: flex;
+    flex-direction: row; 
     padding-left: 50px;
-    margin-top: -50px;
     float: right;
     color: black;
     text-decoration: none;
@@ -484,7 +491,6 @@ a {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767px) {
-
     .logo-container {
         width: 80%;
         margin-left: 95px;
@@ -579,8 +585,10 @@ a {
     }
 
     .hebergements {
-        width: 100% !important;
+        width: 70% !important;
         margin-top: 50px;
+        display: flex;
+        align-items: center;
         flex-direction: column;
     }
 
@@ -602,7 +610,7 @@ a {
     }
 
     .populaires {
-        width: 100%;
+        width: 70%;
         margin-top: 50px;
         display: flex;
         align-items: center;
@@ -628,7 +636,7 @@ a {
     }
 
     .activites {
-        width: 100%;
+        width: 70%;
         margin-top: 50px;
         flex-direction: column;
     }
@@ -672,6 +680,5 @@ a {
         margin-top: 50px;
         padding: 5px 0 0 20px;
     }
-
     /* ... */
 }
