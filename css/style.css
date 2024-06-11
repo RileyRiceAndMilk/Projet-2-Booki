@@ -591,12 +591,12 @@ a {
     }
 
 
-    .filtres_1 {
+   .filtres_1 {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         width: 100%;
-        gap: 5px;
+        gap: 7px;
     }
 
     .filtres_2 {
@@ -604,7 +604,9 @@ a {
         flex-wrap: wrap;
         justify-content: center;
         width: 100%;
+        gap: 7px;
     }
+
 
     .hebergements-and-populaires {
         flex-direction: column-reverse;
