@@ -12,6 +12,10 @@
     color: var(--main-color);
 }
 
+.fa-location-dot {
+    color: black;
+}
+
 .search-icon {
     padding: 0;
 }
