@@ -473,7 +473,6 @@ a {
     }
 
 }
-
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767px) {
 
@@ -517,13 +516,13 @@ a {
         border-top: none;
         border-bottom: solid 0.1rem #DEEBFF;
         padding-top: 0.1rem;
-        padding-left: 50px;
+        padding-left: 250px;
         padding-right: 50px;
-        padding-bottom: 0.7rem; 
+        padding-bottom: 0.7rem;
         transform: translateY(-0.8rem);
-    
+
     }
-    
+
     .lien-activite {
         display: flex;
         flex-direction: row;
@@ -532,11 +531,11 @@ a {
         text-decoration: none;
         padding-top: 0.1rem;
         padding-left: 50px;
-        padding-right: 50px;
-        padding-bottom: 0.7rem; 
+        padding-right: 250px;
+        padding-bottom: 0.7rem;
         transition: color 0.3s, border-bottom 0.3s;
         border-top: none;
-        border-bottom: solid 0.1 #DEEBFF;
+        border-bottom: solid 0.1rem #DEEBFF;
         transform: translateY(-0.8rem);
     }
 
@@ -544,26 +543,33 @@ a {
         color: var(--main-color);
         border-top: none;
         border-bottom: solid 0.1rem var(--main-color);
-        padding-left: 50px;
+        padding-left: 250px;
         padding-right: 50px;
         transform: translateY(-0.8rem);
         cursor: pointer;
     }
-    
+
     .lien-activite:hover {
         color: var(--main-color);
         border-top: none;
         border-bottom: solid 0.1rem var(--main-color);
         padding-left: 50px;
-        padding-right: 50px;
+        padding-right: 250px;
         transform: translateY(-0.8rem);
         cursor: pointer;
     }
-    
+
     h1 {
         margin-bottom: 2.5px;
         font-size: 20px;
         align-items: center;
+        text-align: left;
+    }
+
+    p {
+        margin-top: 2.5px;
+        margin-bottom: 20px;
+        align-items: left;
         text-align: left;
     }
 
@@ -603,52 +609,21 @@ a {
         max-width: 767px;
     }
 
-    .activites {
-        width: 100%;
-        /* Ajustez la largeur pour occuper 90% de la largeur disponible */
-        max-width: 400px;
-        /* Ajoutez une largeur maximale pour éviter que les éléments ne deviennent trop larges */
-        margin: 20px auto;
-        /* Centrez les éléments horizontalement */
-        padding: 10px;
-        /* Réduisez les rembourrages pour économiser de l'espace */
-    }
-
-    .hebergements,
-    .activites {
-        width: 90%;
-        /* Ajustez la largeur pour occuper 90% de la largeur disponible */
-        max-width: 400px;
-        /* Ajoutez une largeur maximale pour éviter que les éléments ne deviennent trop larges */
-        margin: 20px auto;
-        /* Centrez les éléments horizontalement */
-        padding: 10px;
-        /* Réduisez les rembourrages pour économiser de l'espace */
-    }
-
     .populaires {
         display: flex;
         flex-direction: column;
         width: 400px;
-        max-width: 400px;
+        max-width: 767px;
         margin: 20px auto;
         padding: 10px;
     }
 
     .hebergements {
-        width: 100%;
-        max-width: 767px;
-        margin-top: 50px;
         display: flex;
+        flex-direction: column;
         align-items: center;
-        flex-direction: column;
-        background-color: transparent;
-        justify-content: center;
-    }
-
-    .hebergements-cards {
-        display: flex;
-        flex-direction: column;
+        width: 100%;
+        background : none;
     }
 
     .hebergements-cards img {
@@ -661,10 +636,8 @@ a {
     .container {
         display: flex;
         flex-direction: column;
-        width: 100%;
-        align-items: center;
+        width: 380px;
     }
-
 
     .activites {
         width: 100%;
@@ -672,6 +645,8 @@ a {
         margin-top: 50px;
         display: flex;
         flex-direction: column;
+        margin: 20px auto;
+        padding: 10px;
     }
 
     .activites-cards {
@@ -703,8 +678,6 @@ a {
         border-bottom-right-radius: 10px;
     }
 
-
-
     .search-footer {
         width: 600px;
         margin-top: 50px;
@@ -715,8 +688,7 @@ a {
         gap: 10px;
     }
 
-
-    .a-propos  {
+    .a-propos {
 
         padding-right: 20px;
     }
