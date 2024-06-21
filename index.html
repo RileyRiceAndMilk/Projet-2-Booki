@@ -24,47 +24,47 @@
                 <a href="#" li class="lien-activite">Activités</a>
             </nav>
         </div>
+        <search>
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p> En plein centre ville ou en pleine nature</p>
+            <div class="search-container">
+                <div class="icon-container-recher">
+                    <i class="fa-solid fa-location-dot large-icon"></i>
+                </div>
+                <form action="/rechercher" method="get">
+                    <input type="text" class="taper-le-texte" name="query" placeholder="Marseille, France">
+                </form>
+                <div class="icon-container">
+                    <input type="submit" value="Rechercher" class="blue-button">
+                </div>
+            </div>
+            <div class="filter-container">
+                <div class="title-filter">Filtres</div>
+                <div class=filtres_1>
+                    <button class="white-button">
+                        <i class="fa-solid fa-money-bill"></i>
+                        Économique
+                    </button>
+                    <button class="white-button">
+                        <i class="fa-solid fa-person"></i>
+                        Familial
+                    </button>
+                </div>
+                <div class=filtres_2>
+                    <button class="white-button">
+                        <i class="fa-solid fa-heart"></i>
+                        Romantique
+                    </button>
+                    <button class="white-button">
+                        <i class="fa-solid fa-fire"></i>
+                        Nos pépites
+                    </button>
+                </div>
+            </div>
+            </div>
+            <p><i class="fa-solid fa-circle-info"> </i> Plus de 500 logements sont disponibles dans cette ville</p>
+        </search>
     </header>
-    <search>
-        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-        <p> En plein centre ville ou en pleine nature</p>
-        <div class="search-container">
-            <div class="icon-container-recher">
-                <i class="fa-solid fa-location-dot large-icon"></i>
-            </div>
-            <form action="/rechercher" method="get">
-                <input type="text" class="taper-le-texte" name="query" placeholder="Marseille, France">
-            </form>
-            <div class="icon-container">
-                <input type="submit" value="Rechercher" class="blue-button">
-            </div>
-        </div>
-        <div class="filter-container">
-            <div class="title-filter">Filtres</div>
-            <div class=filtres_1>
-                <button class="white-button">
-                    <i class="fa-solid fa-money-bill"></i>
-                    Économique
-                </button>
-                <button class="white-button">
-                    <i class="fa-solid fa-person"></i>
-                    Familial
-                </button>
-            </div>
-            <div class=filtres_2>
-                <button class="white-button">
-                    <i class="fa-solid fa-heart"></i>
-                    Romantique
-                </button>
-                <button class="white-button">
-                    <i class="fa-solid fa-fire"></i>
-                    Nos pépites
-                </button>
-            </div>
-        </div>
-        </div>
-        <p><i class="fa-solid fa-circle-info"> </i> Plus de 500 logements sont disponibles dans cette ville</p>
-    </search>
     <main>
         <div class="hebergements-and-populaires">
             <section class="hebergements">
@@ -327,22 +327,27 @@
     </main>
     <footer>
         <nav class="search-footer">
-            <div class="a-propos">
-                <h2>À propos</h2>
-                <p>Fonctionnement du site</p>
-                <p>Conditions générales</p>
-                <p>Données et confidentialité</p>
-            </div>
-            <div class="Nos-hebergements">
-                <h2>Nos hébergements</h2>
-                <p>Charte qualité</p>
-                <p>Proposer votre hôtel</p>
-            </div>
-            <div class="Assitance">
-                <h2>Assitance</h2>
-                <p>Centre d'aide</p>
-                <p> Nous contacter</p>
-            </div>
+            <ul class="a-propos">
+                <li><a href="#a-propos">À propos</a></li>
+                <li><a href="p">Fonctionnement du site</a></li>
+                <li><a href="p">Conditions générales</a></li>
+                <li><a href="p">Données et confidentialité</a></li>
+            </ul>
+            <ul class="Nos-hebergements">
+                <li><a href=#nos-hebergements>Nos hébergements</a></li>
+                <li><a href="p">Charte qualité</a></li>
+                <li><a href="p">Proposer votre hôtel</a></li>
+            </ul>
+            <ul class="Assistance">
+                <li><a href="#assistance">Assistance</a></li>
+                <li><a href="p">Centre d'aide</a></li>
+                <li><a href="p"> Nous contacter</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>
         </nav>
     </footer>
 </body>
