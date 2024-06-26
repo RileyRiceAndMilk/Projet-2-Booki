@@ -281,6 +281,7 @@ a {
     margin-top: 10px;
     margin-bottom: 0px;
     text-align: left;
+    text-overflow: ellipsis;
 }
 
 .hebergements-cards .card-subtitle {
@@ -309,6 +310,10 @@ a {
     font-weight: bold;
 }
 
+.fa-star:hover,
+.fa-star:hover ~ .fa-star {
+    color: #0065FC
+}
 
 /****** Populaires ***********/
 .populaires {
