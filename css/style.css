@@ -258,6 +258,7 @@ a {
 }
 
 .hebergement-titre {
+    text-overflow: ellipsis;
     font-size: 25px;
     margin: 0;
     padding: 10px 20px;
@@ -329,6 +330,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-overflow: ellipsis;
     width: 100%;
     margin-bottom: 30px;
 }
@@ -393,6 +395,7 @@ a {
     text-align: left;
     margin-bottom: 20px;
     font-size: 15px;
+    text-overflow: ellipsis;
 }
 
 .activites-cards img {
