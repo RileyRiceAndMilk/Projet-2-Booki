@@ -642,67 +642,35 @@ li {
     }
 
     .lien-container {
-        display: flex;
-        justify-content: center;
-        text-align: center;
         width: 100%;
-        margin-top: 10px;
-        gap: 50px;
+        align-items: flex-start;
+        padding: 0;
+        gap: 0;
+        display: flex; 
     }
-
+    
     .lien-hebergement,
     .lien-activite {
-        flex: 1;
-        padding: 10px 0;
-        color: var(--inactive-color);
-        text-decoration: none;
-        transition: color 0.3s;
-        position: relative;
-        margin: 0;
+        width: 50%;
+        height: 33px;
+        display: flex;
         border-top: none;
+        justify-content: center;
+        align-items: center; 
+        border-bottom: 2px solid var(--main-bg-color);
+        transition: border-color 0.3s; 
     }
-
-
-    .lien-hebergement::after {
-        content: '';
-        position: absolute;
-        left: -5%;
-        bottom: -1px;
-        width: 130%;
-        height: 2px;
-        background-color: #DEEBFF;
-        transition: background-color 0.3s;
-        border-top: none;
-    }
-
-    .lien-activite::after {
-        content: '';
-        position: absolute;
-        left: -12%;
-        bottom: -1px;
-        width: 120%;
-        height: 2px;
-        background-color: #DEEBFF;
-        transition: background-color 0.3s;
-        border-top: none;
-    }
-
-    .lien-hebergement:hover::after,
-    .lien-activite:hover::after,
-    .lien-hebergement.active::after,
-    .lien-activite.active::after {
-        background-color: var(--main-color);
-        border-top: none;
-    }
-
+    
     .lien-hebergement:hover,
     .lien-activite:hover,
     .lien-hebergement.active,
     .lien-activite.active {
         color: var(--main-color);
+        border-bottom: 2px solid var(--main-color);
+        padding-top: 0; 
+        padding-bottom: 2px;
         border-top: none;
     }
-
     .title-filter {
         margin-bottom: 10px;
         text-align: left;
