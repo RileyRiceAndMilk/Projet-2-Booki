@@ -628,16 +628,6 @@ li {
         font-size: 24px;
         font-weight: bold;
         margin: 10px 0;
-    }
-
-    .title-filter {
-        display: flex;
-        justify-content: left;
-        align-items: center;
-        width: 100%;
-        font-size: 24px;
-        font-weight: bold;
-        margin: 10px 0;
         padding: 0;
         box-sizing: border-box; 
     }
