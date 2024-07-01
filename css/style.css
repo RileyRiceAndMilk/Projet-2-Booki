@@ -569,24 +569,6 @@ li {
 }
 
 @media (max-width: 767px) {
-    
-    header {
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center; 
-        margin-bottom: 0;
-        padding-left: 50px;
-    }
-    
-    .logo {
-        margin-bottom: 20px;
-        text-align: center;
-        justify-content: center;
-    }
-    
     .logo-et-liens {
         display: flex;
         flex-direction: column;
@@ -595,7 +577,16 @@ li {
         width: 100%;
         padding-left: 0;
     }
-    
+
+    .lien-container {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        gap: 0;
+        display: flex;
+    }
+
     .search-container {
         display: flex;
         flex-direction: row;
@@ -604,16 +595,8 @@ li {
         width: 100%;
         padding: 0 10px;
     }
-    
-    .lien-container {
-        width: 100%;
-        align-items: center;
-        justify-content: center; 
-        padding: 0;
-        gap: 0;
-        display: flex;
-    }
-    
+
+
     .lien-hebergement,
     .lien-activite {
         width: 50%;
@@ -624,7 +607,7 @@ li {
         border-bottom: 2px solid var(--main-bg-color);
         transition: border-color 0.3s;
     }
-    
+
     .lien-hebergement:hover,
     .lien-activite:hover,
     .lien-hebergement.active,
@@ -634,7 +617,7 @@ li {
         padding-top: 0;
         padding-bottom: 2px;
     }
-    
+
     .title-filter {
         display: flex;
         justify-content: left;
@@ -644,8 +627,20 @@ li {
         font-weight: bold;
         margin: 10px 0;
     }
+
+    .title-filter {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        width: 100%;
+        font-size: 24px;
+        font-weight: bold;
+        margin: 10px 0;
+        padding: 0;
+        box-sizing: border-box; 
+    }
     
-    ..filter-container {
+    .filter-container {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -679,6 +674,7 @@ li {
         margin: 5px;
         box-sizing: border-box; 
     }
+
     .hebergements-and-populaires {
         display: flex;
         flex-direction: column-reverse;
@@ -696,7 +692,6 @@ li {
         width: 100%;
         max-width: 767px;
         margin: 20px auto;
-        margin-left: 25px;
     }
 
     .hebergements {
@@ -706,34 +701,22 @@ li {
         width: 100%;
         max-width: 767px;
         background: none;
-        margin-left: 50px;
     }
-
     .hebergements-cards img {
         width: 100%;
         height: 136px;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
     }
-
     .container {
         display: flex;
         flex-direction: column;
     }
+
     .activites {
-        width: 80%;
-        max-width: 767px;
-        margin-top: 10px;
-        display: flex;
-        flex-direction: column;
-        align-items: left;
-        padding-left: 0px;
-        padding-right: 52px;
-        margin: 20px 0;
-        padding: 0px 100px;
-        margin-left: 50px;
+        width: 100%;
+        padding: 0 20px;
     }
-    
 
     .activites-cards {
         display: flex;
@@ -765,37 +748,19 @@ li {
         border-bottom-right-radius: 10px;
     }
 
+    .footer-container {
+        width: 100%;
+        padding: 0 20px;
+    }
 
     .search-footer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         width: 100%;
-        margin-top: 150px;
+        padding: 0 20px;
     }
 
-    .search-footer .a-propos a[href="#a-propos"],
-    .search-footer .Nos-hebergements a[href="#nos-hebergements"],
-    .search-footer .Assistance a[href="#assistance"] {
-        font-weight: bold;
+
+    .activites-cards {
+        flex-direction: column;
     }
 
-    .search-footer .a-propos a[href="#a-propos"] {
-        padding-left: 20px;
-    }
-
-    .search-footer .Assistance a[href="#assistance"] {
-        padding-right: 20px;
-    }
-
-    ul {
-        padding-left: 20px;
-    }
-
-    li {
-        font-weight: normal;
-        text-align: left;
-        font-size: 15px;
-        list-style-type: none;
-    }
 }
