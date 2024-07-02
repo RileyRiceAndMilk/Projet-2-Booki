@@ -602,7 +602,7 @@ li {
         border: none;
     }
 
-  .lien-hebergement,
+  . .lien-hebergement,
     .lien-activite {
         width: 50%;
         max-width: 767px;
@@ -631,6 +631,7 @@ li {
         transform: translateY(-0.8rem);
         cursor: pointer;
     }
+
 
 
     .title-filter {
