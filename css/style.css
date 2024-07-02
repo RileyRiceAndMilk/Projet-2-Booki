@@ -233,11 +233,16 @@ header {
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
     margin-bottom: 30px;
+    font-weight: bold;
 }
 
 .white-button:hover {
     background-color: #DEEBFF;
     color: black;
+}
+
+.white-button .fa-solid {
+    padding-right: 8px; 
 }
 
 
@@ -633,15 +638,6 @@ li {
         display: flex;
     }
 
-    .search-container {
-        max-width: 767px;
-        width: 100%;
-        padding: 20px;
-        font-weight: bold;
-        font-size: 18px;
-        border: none;
-    }
-
     .lien-hebergement,
     .lien-activite {
         width: 50%;
@@ -670,6 +666,15 @@ li {
         border-top: none;
         transform: translateY(-0.8rem);
         cursor: pointer;
+    }
+
+    .search-container {
+        max-width: 767px;
+        width: 100%;
+        padding: 20px;
+        font-weight: bold;
+        font-size: 18px;
+        border: none;
     }
 
     .blue-button {
