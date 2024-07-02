@@ -796,16 +796,12 @@ li {
         border-bottom-right-radius: 10px;
     }
 
-    .footer-container {
-        width: 100%;
-        padding: 0 20px;
+   .search-footer {
+        flex-direction: column;
+        margin-top: 200px;
+        padding: 30px;
+        gap: 10px;
     }
-
-    .search-footer {
-        width: 100%;
-        padding: 0 20px;
-    }
-
 
     .activites-cards {
         flex-direction: column;
