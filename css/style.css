@@ -44,7 +44,7 @@ a {
 
 .section-title {
     margin-bottom: 20px;
-   font-size: 22px;
+    font-size: 22px;
 }
 
 .card {
@@ -77,8 +77,20 @@ body {
     margin: auto;
 }
 
-header,
-main,
+header {
+    width: 100%;
+    max-width: 1340px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100%;
+    max-width: 1340px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
 footer {
     width: 100%;
     max-width: 1340px;
@@ -583,16 +595,22 @@ li {
 
 @media (max-width: 767px) {
 
-    body {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: start;
-        min-height: 100vh;
+    header {
         width: 100%;
-        overflow-x: hidden;
-        margin: 0;
+        max-width: 767px;
+        padding: 0 0px;
+        box-sizing: border-box;
+    }
+
+    body {
         padding: 0;
+        max-width: 767px;
+    }
+
+    .logo {
+        width: 70px;
+        height: auto;
+        margin-bottom: 30px;
     }
 
     .logo-et-liens {
@@ -606,9 +624,11 @@ li {
 
     .lien-container {
         width: 100%;
+        height: 35px;
         align-items: center;
         justify-content: center;
-        padding: 0;
+        padding: 0px;
+        margin: 0px;
         gap: 0;
         display: flex;
     }
@@ -646,7 +666,7 @@ li {
         color: var(--main-color);
         border-bottom: 2px solid var(--main-color);
         padding-top: 0;
-        padding-bottom: 2px; 
+        padding-bottom: 2px;
         border-top: none;
         transform: translateY(-0.8rem);
         cursor: pointer;
@@ -669,7 +689,7 @@ li {
         margin-bottom: 10px;
     }
 
-    
+
     .bouton-version-mobile i {
         color: white;
     }
@@ -796,12 +816,13 @@ li {
         border-bottom-right-radius: 10px;
     }
 
-   .search-footer {
+    .search-footer {
         flex-direction: column;
         margin-top: 200px;
         padding: 30px;
         gap: 10px;
     }
+
 
     .activites-cards {
         flex-direction: column;
