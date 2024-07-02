@@ -604,11 +604,13 @@ li {
 
     .lien-hebergement,
     .lien-activite {
-        width: 50%;
+     width: 50%;
+        max-width: 767px;
         height: 33px;
         display: flex;
         justify-content: center;
         align-items: center;
+        border-top: none;
         border-bottom: 2px solid var(--main-bg-color);
         transition: border-color 0.3s;
     }
@@ -617,10 +619,12 @@ li {
     .lien-activite:hover,
     .lien-hebergement.active,
     .lien-activite.active {
+        position: absolute;
         color: var(--main-color);
         border-bottom: 2px solid var(--main-color);
         padding-top: 0;
-        padding-bottom: 2px;
+        padding-bottom: 2px; 
+        border-top: none;
     }
 
     .title-filter {
