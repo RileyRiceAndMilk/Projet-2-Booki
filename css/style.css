@@ -29,6 +29,7 @@
 h1 {
     margin-bottom: 2.5px;
     text-align: left;
+    font-size: 22px;
 }
 
 p {
@@ -43,7 +44,7 @@ a {
 
 .section-title {
     margin-bottom: 20px;
-    font-size: 22px;
+   font-size: 22px;
 }
 
 .card {
@@ -486,6 +487,12 @@ li {
         gap: 30%;
     }
 
+    h1 {
+        margin-bottom: 2.5px;
+        text-align: left;
+        font-size: 18px;
+    }
+
     .hebergements-and-populaires {
         display: flex;
         align-items: center;
@@ -575,6 +582,19 @@ li {
 }
 
 @media (max-width: 767px) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        min-height: 100vh;
+        width: 100%;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+
     .logo-et-liens {
         display: flex;
         flex-direction: column;
@@ -593,7 +613,7 @@ li {
         display: flex;
     }
 
-       .search-container {
+    .search-container {
         max-width: 767px;
         width: 100%;
         padding: 20px;
@@ -632,28 +652,6 @@ li {
         cursor: pointer;
     }
 
-
-    .title-filter {
-        display: flex;
-        justify-content: left;
-        align-items: center;
-        width: 100%;
-        font-size: 24px;
-        font-weight: bold;
-        margin: 10px 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    .filter-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        padding: 10px;
-        box-sizing: border-box;
-    }
-
     .blue-button {
         display: none;
     }
@@ -674,6 +672,27 @@ li {
     
     .bouton-version-mobile i {
         color: white;
+    }
+
+    .title-filter {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        width: 100%;
+        font-size: 24px;
+        font-weight: bold;
+        margin: 10px 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .filter-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
     }
 
     .filtres_1,
