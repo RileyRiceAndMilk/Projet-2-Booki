@@ -593,7 +593,7 @@ li {
         display: flex;
     }
 
-    .search-container {
+       .search-container {
         max-width: 767px;
         width: 100%;
         padding: 20px;
@@ -602,7 +602,7 @@ li {
         border: none;
     }
 
-  . .lien-hebergement,
+    .lien-hebergement,
     .lien-activite {
         width: 50%;
         max-width: 767px;
@@ -631,7 +631,6 @@ li {
         transform: translateY(-0.8rem);
         cursor: pointer;
     }
-
 
 
     .title-filter {
