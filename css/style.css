@@ -777,6 +777,7 @@ li {
         width: 100%;
         max-width: 767px;
         background: none;
+         padding: 0 20px;
     }
 
     .hebergements-cards img {
