@@ -812,7 +812,10 @@ li {
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
     }
-
+main {
+    max-width: 1340px;
+    padding: 0 px;
+}
     .element {
         display: inline-block;
         width: 100%;
