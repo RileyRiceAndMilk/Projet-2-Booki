@@ -776,6 +776,10 @@ padding-left: 0 20px;
       border-radius: 0px;
     }
 
+    .populaires-cards {
+        width: 100%
+    }
+
     .hebergements {
         display: flex;
         flex-direction: column;
