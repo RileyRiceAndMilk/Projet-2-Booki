@@ -849,12 +849,11 @@ main {
 
     footer {
     display: block;
+        margin-top: 0px;
 }
 
     .search-footer {
         flex-direction: column;
-        margin-top: 200px;
-        padding: 30px;
         gap: 10px;
     }
 
