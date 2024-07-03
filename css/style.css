@@ -849,6 +849,7 @@ main {
     footer {
     display: block;
         margin-top: 0px;
+        padding : 0px;
 }
 
     .search-footer {
