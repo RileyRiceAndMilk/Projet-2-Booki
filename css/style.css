@@ -800,6 +800,11 @@ li {
         width: 100%;
         gap: 30px;
     }
+
+    p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
     
     .activites-cards img {
         width: 100%;
