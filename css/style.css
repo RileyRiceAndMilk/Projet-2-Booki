@@ -847,6 +847,10 @@ main {
         border-bottom-right-radius: 10px;
     }
 
+    footer {
+    display: block;
+}
+
     .search-footer {
         flex-direction: column;
         margin-top: 200px;
