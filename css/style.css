@@ -857,12 +857,16 @@ main {
     footer {
     display: block;
         margin-top: 0px;
-        padding : 0px;
+        padding: 0px;
 }
 
     .search-footer {
         flex-direction: column;
         gap: 10px;
+    }
+
+    footer nav ul {
+        padding-inline-start: 20px;
     }
 
 }
