@@ -477,6 +477,10 @@ footer {
     font-weight: bold;
 }
 
+.search-footer .Assistance a[href="#assistance"] {
+    padding
+}
+
 .search-footer .a-propos a[href="#a-propos"] {
     justify-content: left;
 }
@@ -716,6 +720,7 @@ li {
         align-items: center;
         width: 100%;
         box-sizing: border-box;
+        margin-bottom : 20px;
     }
 
     .filtres_1,
