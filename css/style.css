@@ -734,6 +734,10 @@ padding: 0 20px;
         margin-bottom : 20px;
     }
 
+    .taper-le-texte {
+   width: 100%;
+}
+
     .filtres_1,
     .filtres_2 {
         display: flex;
@@ -876,6 +880,11 @@ main {
 
     footer nav ul {
         padding-inline-start: 20px;
+    }
+
+    
+    form {
+        width: 100%;
     }
 
 }
