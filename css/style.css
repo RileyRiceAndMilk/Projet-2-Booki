@@ -484,6 +484,11 @@ footer {
     padding-inline-end: 40px;
 }
 
+.Assistance {
+    padding-inline-start: 0px;
+    padding-inline-end: 40px;
+}
+
 .search-footer .a-propos a[href="#a-propos"] {
     justify-content: left;
 }
