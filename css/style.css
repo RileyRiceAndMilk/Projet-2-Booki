@@ -869,6 +869,11 @@ main {
         gap: 10px;
     }
 
+    .assistance {
+        padding-inline-start: 20px;
+        padding-inline-end: 0px;
+    }
+
     footer nav ul {
         padding-inline-start: 20px;
     }
