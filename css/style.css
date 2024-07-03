@@ -773,7 +773,7 @@ padding-left: 0 20px;
         width: 100%;
         max-width: 767px;
         margin: 0px auto;
-      border-radius: 0px;
+        border-radius: 0px!important;
     }
 
     .populaires-cards {
