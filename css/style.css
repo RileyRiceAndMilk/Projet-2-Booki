@@ -766,6 +766,7 @@ li {
         width: 100%;
         max-width: 767px;
         margin: 0px auto;
+      border-radius: 0px;
     }
 
     .hebergements {
