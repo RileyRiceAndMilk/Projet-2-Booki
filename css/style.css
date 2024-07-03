@@ -790,6 +790,11 @@ li {
         border-top-right-radius: 10px;
     }
 
+    .box {
+    margin: 10px 0px;
+         padding: 0;
+}
+
     .container {
         display: flex;
         flex-direction: column;
