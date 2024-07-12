@@ -56,6 +56,9 @@ a {
 
 .card img {
     object-fit: cover;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
 .euro {
@@ -71,37 +74,26 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: start;
-    min-height: 100vh;
-    max-width: 100%;
     overflow-x: hidden;
     margin: auto;
-}
-
-header {
-    width: 100%;
-    max-width: 1340px;
-    padding: 0 20px;
-    box-sizing: border-box;
-}
-
-main {
-    width: 100%;
-    max-width: 1340px;
-    padding: 0 20px;
-    box-sizing: border-box;
-}
-
-footer {
-    width: 100%;
-    max-width: 1340px;
-    padding: 0 20px;
-    box-sizing: border-box;
+    min-height: 100vh;
+    max-width: 100%;
 }
 
 header {
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1340px;
     margin-bottom: 0;
+    padding: 0 20px;
+}
+
+.logo {
+    width: 70px;
+    height: auto;
+    margin-top: 20px;
 }
 
 .logo-et-liens {
@@ -109,12 +101,6 @@ header {
     justify-content: space-between;
     width: 100%;
     gap: 20px;
-}
-
-.logo {
-    width: 70px;
-    height: auto;
-    margin-top: 20px;
 }
 
 .lien-container {
@@ -146,6 +132,7 @@ header {
     cursor: pointer;
 }
 
+
 .search-container {
     display: flex;
     align-items: center;
@@ -153,27 +140,12 @@ header {
     margin-bottom: 20px;
 }
 
-.card {
-    background-color: white;
-    border-radius: 20px;
-    padding: 5px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-}
-
-.card img {
-    object-fit: cover;
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-
 .icon-container-recher {
-    background-color: #f2f2f2;
     display: inline-block;
-    padding: 10.5px;
     vertical-align: middle;
+    background-color: #f2f2f2;
     margin-bottom: 10px;
+    padding: 10.5px;
     line-height: 1;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -224,16 +196,16 @@ header {
 .white-button {
     background-color: white;
     color: black;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 30px;
     padding: 10px 20px;
     border: 1px solid gray;
     border-radius: 5px;
-    cursor: pointer;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
-    margin-bottom: 30px;
-    font-weight: bold;
 }
 
 .white-button:hover {
@@ -242,9 +214,15 @@ header {
 }
 
 .white-button .fa-solid {
-    padding-right: 8px; 
+    padding-right: 8px;
 }
 
+main {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1340px;
+    padding: 0 20px;
+}
 
 .hebergements-and-populaires {
     display: flex;
@@ -255,9 +233,9 @@ header {
 }
 
 .hebergements-and-populaires section {
+    box-sizing: border-box;
     border-radius: 20px;
     padding: 30px;
-    box-sizing: border-box;
 }
 
 .hebergements {
@@ -278,12 +256,12 @@ header {
 
 .hebergements-cards.card {
     display: flex;
-    margin-top: 33px;
-    cursor: pointer;
-    width: 150px;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
+    cursor: pointer;
+    width: 150px;
+    margin-top: 33px;
 }
 
 .hebergements-cards img {
@@ -294,17 +272,17 @@ header {
 }
 
 .hebergements-cards .card-title {
-    margin-top: 10px;
-    margin-bottom: 0px;
     text-align: left;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
+    margin-top: 10px;
+    margin-bottom: 0px;
 }
 
 .hebergements-cards .card-subtitle {
-    margin: 10px 0;
     text-align: left;
+    margin: 10px 0;
 }
 
 .container {
@@ -357,8 +335,8 @@ header {
 }
 
 .populaires-title .icon {
-    margin-left: auto;
     display: flex;
+    margin-left: auto;
     align-items: center;
 }
 
@@ -377,24 +355,24 @@ header {
 }
 
 .populaires-cards .card-content {
-    width: 67%;
-    height: auto;
-    padding-left: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
+    width: 67%;
+    height: auto;
+    padding-left: 15px;
 }
 
 .populaires-cards .card-title {
+    text-align: left;
     margin-top: 10px;
     margin-bottom: 0px;
-    text-align: left;
 }
 
 .populaires-cards .card-subtitle {
-    margin: 0;
     text-align: left;
+    margin: 0;
 }
 
 .populaires-cards .card-rating {
@@ -404,42 +382,42 @@ header {
 .Activites-title {
     display: flex;
     text-align: left;
-    margin-bottom: 20px;
-    font-size: 15px;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
+    margin-bottom: 20px;
+    font-size: 15px;
 }
 
 .activites-cards img {
+    display: flex;
+    text-align: left;
+    cursor: pointer;
     width: 100%;
     height: 370px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    display: flex;
-    text-align: left;
-    cursor: pointer;
 }
 
 .activites-cards {
-    font-size: 0;
     display: flex;
     justify-content: space-between;
+    font-size: 0;
     gap: 30px;
-    margin: auto;
     max-width: 1300px;
+    margin: auto;
     margin-bottom: 20px;
     cursor: pointer;
 }
 
 .card-txt-activites {
     text-align: left;
-    font-size: 16px;
-    padding-left: 15px;
     cursor: pointer;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
+    font-size: 16px;
+    padding-left: 15px;
 }
 
 .element {
@@ -453,33 +431,37 @@ header {
 }
 
 footer {
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: auto;
+    width: 100%;
+    max-width: 1340px;
     margin-top: 40px;
+    margin: auto;
+    padding: 0 20px;
     flex: 0 0 auto;
+    box-sizing: border-box;
 }
 
 .search-footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    background-color: #F2F2F2;
     width: 100%;
     max-width: 1300px;
-    background-color: #F2F2F2;
 }
 
 .search-footer .a-propos a[href="#a-propos"],
 .search-footer .Nos-hebergements a[href="#nos-hebergements"],
 .search-footer .Assistance a[href="#assistance"] {
     font-weight: bold;
+    font-size: 25px;
 }
 
 .search-footer .Assistance a[href="#assistance"] {
-   padding-inline-start: 0px;
+    padding-inline-start: 0px;
     padding-inline-end: 40px;
 }
 
@@ -499,8 +481,9 @@ footer {
 li {
     font-weight: normal;
     text-align: left;
-    font-size: 15px;
     list-style-type: none;
+    font-size: 20px;
+    line-height: 2;
 }
 
 
@@ -516,8 +499,8 @@ li {
     }
 
     h1 {
-        margin-bottom: 2.5px;
         text-align: left;
+        margin-bottom: 2.5px;
         font-size: 18px;
     }
 
@@ -549,12 +532,12 @@ li {
     }
 
     .activites-cards {
-        font-size: 0;
         display: flex;
         margin: auto;
         max-width: 1024px;
         margin-bottom: 10px;
-        gap: 5px;
+        gap: 2px;
+        font-size: 0;
     }
 
     .activites-cards img {
@@ -566,15 +549,18 @@ li {
 
     .element {
         display: inline-block;
-        width: 20%;
+        margin: auto;
+        width: 22%;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
         border-radius: 10px;
-        margin: auto;
     }
 
     .card-txt-activites {
         text-align: left;
-        font-size: 8px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        font-size: 10px;
         padding-left: 10px;
     }
 
@@ -586,19 +572,25 @@ li {
         max-width: 1024px;
     }
 
+    .search-footer .a-propos a[href="#a-propos"],
+    .search-footer .Nos-hebergements a[href="#nos-hebergements"],
+    .search-footer .Assistance a[href="#assistance"] {
+        font-weight: bold;
+        font-size: 15px;
+    }
+
     .search-footer {
         justify-content: space-between;
-        margin-top: 50px;
-        margin: auto;
-        max-width: 1024px;
         box-sizing: border-box;
-        font-size: 10px;
+        margin: auto;
+        margin-top: 50px;
+        max-width: 1024px;
     }
 
     li {
         font-weight: normal;
         text-align: left;
-        font-size: 10px;
+        font-size: 12px;
         list-style-type: none;
     }
 
@@ -611,16 +603,17 @@ li {
 
 @media (max-width: 767px) {
 
+
+    body {
+        padding: 0;
+        max-width: 767px;
+    }
+
     header {
         width: 100%;
         max-width: 767px;
         padding: 0 0px;
         box-sizing: border-box;
-    }
-
-    body {
-        padding: 0;
-        max-width: 767px;
     }
 
     .logo {
@@ -639,30 +632,30 @@ li {
     }
 
     .header-search {
-padding: 0 20px;
-         }
+        padding: 0 20px;
+    }
 
     .lien-container {
-        width: 100%;
-        height: 35px;
+        display: flex;
         align-items: center;
         justify-content: center;
-        padding: 0px;
+        width: 100%;
+        height: 35px;
         margin: 0px;
+        padding: 0px;
         gap: 0;
-        display: flex;
     }
 
     .lien-hebergement,
     .lien-activite {
-        width: 50%;
-        max-width: 767px;
-        height: 33px;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
         border-top: none;
+        width: 50%;
+        max-width: 767px;
+        height: 33px;
         border-bottom: 2px solid var(--main-bg-color);
         transition: border-color 0.3s;
         transform: translateY(-0.8rem);
@@ -675,10 +668,10 @@ padding: 0 20px;
         display: flex;
         flex-direction: row;
         color: var(--main-color);
+        border-top: none;
         border-bottom: 2px solid var(--main-color);
         padding-top: 0;
         padding-bottom: 2px;
-        border-top: none;
         transform: translateY(-0.8rem);
         cursor: pointer;
     }
@@ -731,12 +724,12 @@ padding: 0 20px;
         align-items: center;
         width: 100%;
         box-sizing: border-box;
-        margin-bottom : 20px;
+        margin-bottom: 20px;
     }
 
     .taper-le-texte {
-   width: 100%;
-}
+        width: 100%;
+    }
 
     .filtres_1,
     .filtres_2 {
@@ -764,6 +757,11 @@ padding: 0 20px;
         box-sizing: border-box;
     }
 
+    main {
+        max-width: 1340px;
+        padding: 0px;
+    }
+
     .hebergements-and-populaires {
         display: flex;
         flex-direction: column-reverse;
@@ -781,7 +779,7 @@ padding: 0 20px;
         width: 100%;
         max-width: 767px;
         margin: 0px auto;
-        border-radius: 0px!important;
+        border-radius: 0px !important;
     }
 
     .populaires-cards {
@@ -795,12 +793,12 @@ padding: 0 20px;
         width: 100%;
         max-width: 767px;
         background: none;
-         padding: 20px !important;
+        padding: 20px !important;
     }
 
     .hebergement-titre {
-    padding: 10px 0px;
-}
+        padding: 10px 0px;
+    }
 
     .hebergements-cards img {
         width: 100%;
@@ -810,9 +808,9 @@ padding: 0 20px;
     }
 
     .box {
-    margin: 10px 0px;
-         padding: 0;
-}
+        margin: 10px 0px;
+        padding: 0;
+    }
 
     .container {
         display: flex;
@@ -831,21 +829,28 @@ padding: 0 20px;
         gap: 30px;
     }
 
+    .card-txt-activites {
+        cursor: pointer;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        text-align: left;
+        font-size: 12px;
+        padding-left: 15px;
+    }
+
     p {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-    
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
     .activites-cards img {
         width: 100%;
         height: 150px;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
     }
-main {
-    max-width: 1340px;
-    padding: 0px;
-}
+
     .element {
         display: inline-block;
         width: 100%;
@@ -863,14 +868,15 @@ main {
     }
 
     footer {
-    display: block;
+        display: block;
         margin-top: 0px;
         padding: 0px;
-}
+    }
 
     .search-footer {
+        display: flex;
         flex-direction: column;
-        gap: 10px;
+        padding-inline-start: 20px;
     }
 
     .assistance {
@@ -882,7 +888,29 @@ main {
         padding-inline-start: 20px;
     }
 
-    
+    .search-footer .a-propos,
+    .search-footer .Nos-hebergements,
+    .search-footer .Assistance {
+        display: flex;
+        align-items: left;
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .search-footer .a-propos a[href="#a-propos"],
+    .search-footer .Nos-hebergements a[href="#nos-hebergements"],
+    .search-footer .Assistance a[href="#assistance"] {
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    li {
+        font-weight: normal;
+        text-align: left;
+        font-size: 15px;
+        list-style-type: none;
+    }
+
     form {
         width: 100%;
     }
