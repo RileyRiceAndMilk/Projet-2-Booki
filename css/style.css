@@ -427,13 +427,9 @@ main {
 }
 
 .card-txt-activites {
-    text-align: left;
+    text-align: center;
     cursor: pointer;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
     font-size: 16px;
-    padding-left: 15px;
 }
 
 .element {
@@ -552,12 +548,7 @@ li {
     }
 
     .card-txt-activites {
-        text-align: left;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        white-space: nowrap;
         font-size: 10px;
-        padding-left: 10px;
     }
 
 }
@@ -780,13 +771,7 @@ li {
     }
 
     .card-txt-activites {
-        cursor: pointer;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        white-space: nowrap;
-        text-align: left;
         font-size: 15px;
-        padding-left: 15px;
     }
 
     p {
